@@ -13,9 +13,21 @@
 #     puts "みかんを購入できません。"
 # end
 
-dice = 0
-while dice != 6 do
-  dice=rand(1..6)
-  puts dice
+# dice = 0
+# while dice != 6 do
+#   dice=rand(1..6)
+#   puts dice
+# end
+
+(1..30).each do |number|
+  if number % 15 == 0
+    puts "fizz_buzz"
+  elsif number % 3 == 0
+    puts "fizz"
+  elsif number % 5 == 0
+    puts "buzz"
+  else
+    puts number.to_s
+  end
 end
 
